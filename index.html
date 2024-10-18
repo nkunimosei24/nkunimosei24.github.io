@@ -8,39 +8,46 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 
 <body>
+    <!-- Sidebar here -->
     <header>
         <nav class="wrapper">
             <div class="sidebar">
                 <div class="profile">
                     <img src="./assets/images/images 1.jpg" alt="">
                     <h3>Nkunim Asaah Osei</h3>
-                    <p>Junior Web Developer</p>
+                    <p>Junior Frontend Developer</p>
                 </div>
                 <ul>
-                    <li><a href="#" class="active">
+                    <li><a href="#home" class="active">
                             <span class="icon"><i style="font-size:24px" class="fa">&#xf015;</i></span>
                             <span class="item">Home</span>
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="#aboutme">
                             <span class="icon"><i style="font-size:24px" class="fa">&#xf007;</i></span>
                             <span class="item">About Me</span>
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="#services">
                             <span class="icon"><i style="font-size:24px" class="fa">&#xf2bb;</i></span>
                             <span class="item">What I Do</span>
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="#experiences">
+                            <span class="icon"><i style="font-size:24px" class="fa">&#xf4fe;</i></span>
+                            <span class="item">Experiences</span>
+                        </a></li>
+                    
+                    <li><a href="#certificates">
+                            <span class="icon"><i style="font-size:24px" class="fa">&#xf0a3;</i></span>
+                            <span class="item">Certificates</span>
+                        </a></li>
+                    <li><a href="#portfolio">
                             <span class="icon"><i style="font-size:24px" class="fa">&#xf0b1;</i></span>
                             <span class="item">Portfolio</span>
                         </a></li>
-                    <li><a href="#">
-                            <span class="icon"><i style="font-size:24px" class="fa">&#xf0c0;</i></span>
-                            <span class="item">Testimonials</span>
-                        </a></li>
-                    <li><a href="#">
+                    <li><a href="#contact">
                             <span class="icon"><i style="font-size:24px" class="fa">&#xf095;</i></span>
                             <span class="item">Contact</span>
                         </a></li>
@@ -58,12 +65,13 @@
                 </div>
             </div>
         </nav>
-
-        <section>
+    
+<!-- Hero text here -->
+        <section id="home">
             <div class="next-section">
                 <h3>Welcome</h3>
                 <h1>
-                    <a href="" class="typewrite" data-period="2000" data-type='[ "I am a Developer...", "I am a Graphic Designer...", "I am an Epidemiologist...", "I Love to Develop." ]'>
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "I am a Developer...", "I am a Graphic Designer...", "I Love to Develop." ]'>
                       <span class="wrap"></span>
                     </a>
                   </h1>
@@ -71,33 +79,194 @@
                 <div class="pointer"><button>Hire Me</button></div>
             </div>
         </section>
+      
     </header>
 
-    <section>
-        <div class="other-section">
-            <div class="min">
-                <h3>Know Me More</h3>
-            <p>I'm Nkunim Osei, a Web Developer.
-                I am Osei Nkunim Asaah, a web developer, graphic designer, and epidemiologist. My work blends technology, creativity, and public health to address real-world challenges. With a background in epidemiology and public health, I have a unique perspective on creating digital solutions that can positively impact communities. My skills in web development and graphic design allow me to build visually engaging and functional platforms, while my experience in public health ensures that these tools are informed by data-driven insights.
-            </p>
+    <!-- About Me Here -->
+    <section id="aboutme">
+        <div class="about-section">
+            <div class="about-left">
+                <h1 class="about-heading">ABOUT ME</h1>
+                <h2 class="sub-heading">Know Me More</h2>
+                <h3 class="intro-text">I'm <span class="highlight">Nkunim Asaah Osei</span>, a Web Developer</h3>
+                <p class="description">I'm a passionate web developer, and a graphic designer with a focus on creating visually appealing and user-friendly digital experiences. With a background in public health and a keen eye for design, I combine creativity with technical expertise to deliver solutions that are both functional and impactful..</p>
+                <p class="description">My goal is to bridge the gap between aesthetics and usability, ensuring every project I work on not only looks great but also meets the needs of its users.</p>
+            </div>
+            <div class="about-right">
+                <ul class="personal-info">
+                    <li class="first"><strong>Name:</strong> Nkunim Asaah Osei</li>
+                    <li class="second"><strong>Email:</strong> oseinkunim@gmail.com</li>
+                    <li class="third"><strong>Contact:</strong> 0540502328</li>
+                    <li class="fourth"><strong>From:</strong> Accra, Ghana</li>
+                </ul>
+                <a href="#" class="download-btn">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services here -->
+    <section id="services">
+<section class="first-call">
+    <h1 class="main-heading">What I Do</h1>
+        <div class="container">
+            <div class="card">
+                <h2>Graphic Design</h2>
+                <p>Creative designer with a passion for visual storytelling, specializing in digital graphics, branding, and user interfaces. I create compelling designs that communicate effectively and leave a lasting impact.</p>
             </div>
             
-            <div class="max">
-                <ul>
-                    <li><a href="#">
-                        <span class="item">Name: Nkunim Asaah Osei</span>
-                    </a></li>
-                <li><a href="#">
-                        <span class="item">Email: oseinkunim@gmail.com</span>
-                    </a></li>
-                <li><a href="#">
-                        <span class="item">Age:24</span>
-                    </a></li>
-                </ul>
+            <div class="card">
+                <h2>Web Design</h2>
+                <p>I create responsive, user-friendly web interfaces, translating design concepts into interactive features for seamless experiences across devices.</p>
+            </div>
+            <div class="card">
+                <h2>Public Health</h2>
+                <p>Create user-friendly, accessible digital platforms that effectively communicate health information and promote public well-being. </p>
+            </div>
+        </div>
+     
+
+ <!-- Skills Section -->
+  <section>
+ <div class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <i class="fab fa-html5" style="color: red;"></i>
+        <h3>HTML</h3>
+      </div>
+      <div class="skill">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS</h3>
+      </div>
+      <div class="skill">
+        <i class="fab fa-js" style="color: yellow;"></i>
+        <h3>JavaScript</h3>
+      </div>
+      <div class="skill">
+        <i class="fab fa-react"></i>
+        <h3>React</h3>
+      </div>
+      <div class="skill">
+        <i class="fa-solid fa-c"></i>
+        <h3>Canva</h3>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- Experience here -->
+<section id="experiences" class="experience-section">
+    <h2>Experience</h2>
+    <div class="experience-grid">
+      <div class="experience-item">
+        <h3>National Service Personnel</h3>
+        <p>University Of Health and Allied Sciences</p>
+        <p>October,2023 - November,2024</p>
+
+      </div>
+      <div class="experience-item">
+        <h3>Graphic Designer</h3>
+        <p>Innville Foundation</p>
+        <p>July, 2024</p>
+
+      </div>
+
+    </div> 
+</div>
+</section>
+
+
+ <!-- Certificates here -->
+  <section id="certificates" class="cert">
+    <div class="certificates-section">
+        <h2>My Certificates</h2>
+        <div class="certificates-grid">
+            <img src="./assets/images/image-20.jpg" alt="Certificate 1">
+            <img src="./assets/images/image-21.jpg" alt="Certificate 2">
+            <img src="./assets/images/image-22.jpg" alt="Certificate 3">
+            <img src="./assets/images/image-24.jpg" alt="Certificate 4">
+            <img src="./assets/images/image-23.png" alt="Certificate 5">
+            <img src="./assets/images/image-25.jpg" alt="Certificate 6">
+        </div>
+    </div>
+    
+
+<section id="portfolio" class="port">
+    
+     <div class="portfolio-section">
+        <h2>Portfolio</h2>
+        <div class="masonry-grid">
+            <div class="portfolio-item">
+                <img class="image1" src="./assets/images/Screenshot 2024-10-17 131734.png" alt="Project 1">
+                <div class="overlay">WEB DESIGN</div>
+            </div>
+            <div class="portfolio-item">
+                <img class="image2"  src="./assets/images/Red & Black Modern Food Promotion A4 Flyer.png" alt="Project 2">
+                <div class="overlay">GRAPHIC DESIGN</div>
+            </div>
+            <div class="portfolio-item">
+                <img class="image3" src="./assets/images/Screenshot 2024-10-18 074052.png" alt="Project 3">
+                <div class="overlay">WEB DESIGN</div>
+            </div>
+            <div class="portfolio-item">
+                <img class="image4" src="./assets/images/image-0.png" alt="Project 4">
+                <div class="overlay">GRAPHIC DESIGN</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="./assets/images/Music App Instagram Post.png" alt="Project 5">
+                <div class="overlay">GRAPHIC DESIGN</div>
             </div>
             
         </div>
-    </section>
+    </div>
+    
+    
+</section>
+
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="contact-container">
+      <div class="contact-box">
+        <div class="form-container">
+          <h2>Contact me. Let's Connect!</h2>
+          <p>I'm always open to new opportunities, collaborations, or just a good conversation. Whether you have a project in mind, a question, or simply want to say hello, I'd love to hear from you. Feel free to reach out, and let's make something great together!</p>
+          <form action="https://formspree.io/f/xldeezyn"
+          method="POST">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Name and surname" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Please enter the details of your request" name="message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- footer here -->
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Follow Me</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon">Facebook <i class="fa-brands fa-facebook" style="color: rgba(0, 0, 255, 0.678);"></i></a>
+                <a href="#" class="social-icon">Twitter <i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="social-icon">LinkedIn <i class="fa-brands fa-linkedin" style="color: rgba(0, 0, 255, 0.712);"></i></a>
+                <a href="#" class="social-icon">Instagram <i class="fa-brands fa-square-instagram"style="color: rgb(201,61,128);;"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Nkunim Asaah Osei. All rights reserved.</p>
+    </div>
+</footer>
+
 </body>
 
 </html>
