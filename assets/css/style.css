@@ -254,8 +254,8 @@ body.active .wrapper .section {
     margin: 30px 0;
 }
 
-.download-cv-button {
-    background-color: #007bff; /* Button color */
+.download-btn {
+    background-color: #333 ; /* Button color */
     color: #fff; /* Text color */
     padding: 10px 20px; /* Padding for button */
     border: none; /* No border */
@@ -266,7 +266,7 @@ body.active .wrapper .section {
 }
 
 .download-cv-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #3333331e; /* Darker shade on hover */
 }
 
 /* Services styling */
