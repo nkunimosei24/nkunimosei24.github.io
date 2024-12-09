@@ -17,7 +17,7 @@
         <nav class="wrapper">
             <div class="sidebar">
                 <div class="profile">
-                    <img src="./assets/images/images 1.jpg" alt="">
+                    <img src="./assets/images/port.jpg" alt="">
                     <h3>Nkunim Asaah Osei</h3>
                     <p>Junior Frontend Developer</p>
                 </div>
@@ -86,8 +86,7 @@
     <section id="aboutme">
         <div class="about-section">
             <div class="about-left">
-                <h1 class="about-heading">ABOUT ME</h1>
-                <h2 class="sub-heading">Know Me More</h2>
+                <h1 class="about-heading">About Me</h1>
                 <h3 class="intro-text">I'm <span class="highlight">Nkunim Asaah Osei</span>, a Web Developer</h3>
                 <p class="description">I'm a passionate web developer, and a graphic designer with a focus on creating visually appealing and user-friendly digital experiences. With a background in public health and a keen eye for design, I combine creativity with technical expertise to deliver solutions that are both functional and impactful..</p>
                 <p class="description">My goal is to bridge the gap between aesthetics and usability, ensuring every project I work on not only looks great but also meets the needs of its users.</p>
@@ -178,18 +177,27 @@
 
 
  <!-- Certificates here -->
-  <section id="certificates" class="cert">
-    <div class="certificates-section">
-        <h2>My Certificates</h2>
-        <div class="certificates-grid">
-            <img src="./assets/images/image-20.jpg" alt="Certificate 1">
-            <img src="./assets/images/image-21.jpg" alt="Certificate 2">
-            <img src="./assets/images/image-22.jpg" alt="Certificate 3">
-            <img src="./assets/images/image-24.jpg" alt="Certificate 4">
-            <img src="./assets/images/image-23.png" alt="Certificate 5">
-            <img src="./assets/images/image-25.jpg" alt="Certificate 6">
-        </div>
-    </div>
+ <section id="certificates" class="cert">
+  <div class="certificates-section">
+      <h2>My Certificates</h2>
+      <div class="certificates-grid">
+          <img src="./assets/images/image-20.jpg" alt="Certificate 1" onclick="openModal(this.src)">
+          <img src="./assets/images/image-21.jpg" alt="Certificate 2" onclick="openModal(this.src)">
+          <img src="./assets/images/image-22.jpg" alt="Certificate 3" onclick="openModal(this.src)">
+          <img src="./assets/images/image-24.jpg" alt="Certificate 4" onclick="openModal(this.src)">
+          <img src="./assets/images/image-23.png" alt="Certificate 5" onclick="openModal(this.src)">
+          <img src="./assets/images/image-25.jpg" alt="Certificate 6" onclick="openModal(this.src)">
+          <img src="./assets/images/cert.jpg" alt="Certificate 7" onclick="openModal(this.src)">
+      </div>
+  </div>
+
+  <!-- Modal for displaying the certificate -->
+  <div id="modal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img">
+      <div id="caption"></div>
+  </div>
+</section>
     
 
 <section id="portfolio" class="port">
@@ -198,24 +206,52 @@
         <h2>Portfolio</h2>
         <div class="masonry-grid">
             <div class="portfolio-item">
-                <img class="image1" src="./assets/images/Screenshot 2024-10-17 131734.png" alt="Project 1">
+              <a href="https://eatandsip.netlify.app" target="_blank"> 
+                <video class="video2" muted playsinline autoplay loop>
+                    <source src="./assets/images/vid 2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <div class="overlay">WEB DESIGN</div>
+            </a>
             </div>
             <div class="portfolio-item">
+              <a href="https://socialmeett.netlify.app" target="_blank"> 
+                <video class="video3" muted playsinline autoplay loop>
+                    <source src="./assets/images/vid 3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="overlay">WEB DESIGN</div>
+            </a>
+            </div>
+            <div class="portfolio-item">
+              <a href="https://www.canva.com/design/DAGJWWxqF4Q/oMO-Kq3un4mBic0iljhk5w/view?utm_content=DAGJWWxqF4Q&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
                 <img class="image2"  src="./assets/images/Red & Black Modern Food Promotion A4 Flyer.png" alt="Project 2">
                 <div class="overlay">GRAPHIC DESIGN</div>
+              </a>
             </div>
             <div class="portfolio-item">
-                <img class="image3" src="./assets/images/Screenshot 2024-10-18 074052.png" alt="Project 3">
+              <a href="https://rentsearch.netlify.app" target="_blank"></a>
+              <video class="video1" muted playsinline autoplay loop>
+                <source src="./assets/images/vid 1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
                 <div class="overlay">WEB DESIGN</div>
+              </a>
             </div>
+           
             <div class="portfolio-item">
+              <a href="https://www.canva.com/design/DAGFUBQHZSY/V1aaofVG_DEzKqnsbodISw/view?utm_content=DAGFUBQHZSY&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
                 <img class="image4" src="./assets/images/image-0.png" alt="Project 4">
                 <div class="overlay">GRAPHIC DESIGN</div>
+              </a>
             </div>
+
+            
             <div class="portfolio-item">
+              <a href="https://www.canva.com/design/DAGNHwHVe90/RRjOdMlsSe-lFrP5ocCF8w/view?utm_content=DAGNHwHVe90&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
                 <img src="./assets/images/Music App Instagram Post.png" alt="Project 5">
                 <div class="overlay">GRAPHIC DESIGN</div>
+              </a>
             </div>
             
         </div>
@@ -234,7 +270,7 @@
           <form action="https://formspree.io/f/xldeezyn"
           method="POST">
             <div class="form-group">
-              <input type="text" name="name" placeholder="Name and surname" required>
+              <input type="text" name="name" placeholder="Name" required>
             </div>
             <div class="form-group">
               <input type="email" name="email" placeholder="Email" required>

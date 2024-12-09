@@ -60,5 +60,37 @@ var hamburger = document.querySelector(".hamburger");
         document.body.appendChild(css);
     };
 
+// Modal styling
+   // Function to open the modal and display the clicked image
+// Function to open the modal and display the clicked image
+function openModal(src) {
+    var modal = document.getElementById("modal");
+    var modalImg = document.getElementById("modal-img");
 
-    
+    // Set the source of the modal image to the clicked image
+    modalImg.src = src;
+
+    // Show the modal
+    modal.style.display = "flex"; // Use flex to center the content
+}
+
+// Function to close the modal
+function closeModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none"; // Hide the modal
+}
+
+// Optional: Close the modal when clicking outside of the image
+window.onclick = function(event) {
+    var modal = document.getElementById("modal");
+    if (event.target == modal) {
+        closeModal(); // Call closeModal function
+    }
+};
+
+// Optional: Close the modal when pressing the escape key
+document.onkeydown = function(event) {
+    if (event.key === "Escape") {
+        closeModal(); // Call closeModal function
+    }
+};
